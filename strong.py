@@ -544,10 +544,10 @@ if __name__ == '__main__':
 
     # 获取相关参数
     parser = argparse.ArgumentParser()
-    parser.add_argument('--source_img_path', type=str, default='data/Images')
-    parser.add_argument('--source_xml_path', type=str, default='data/Annotations')
-    parser.add_argument('--save_img_path', type=str, default='data/Images2')
-    parser.add_argument('--save_xml_path', type=str, default='data/Annotations2')
+    parser.add_argument('--source_img_path', type=str, default='strongdata/data/Images')
+    parser.add_argument('--source_xml_path', type=str, default='strongdata/data/Annotations')
+    parser.add_argument('--save_img_path', type=str, default='PaddleDetection-release-2.3/dataset/voc/JPEGImages')
+    parser.add_argument('--save_xml_path', type=str, default='PaddleDetection-release-2.3/dataset/voc/Annotations')
     args = parser.parse_args()
     source_img_path = args.source_img_path  # 图片原始位置
     source_xml_path = args.source_xml_path  # xml的原始位置
